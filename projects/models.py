@@ -5,6 +5,9 @@ from polymorphic.models import PolymorphicModel
 class Project(PolymorphicModel):
     topic = models.CharField(max_length=30)
 
+    def __str__(self):
+        return self.topic
+
 
 class ArtProject(Project):
     artist = models.CharField(max_length=30)

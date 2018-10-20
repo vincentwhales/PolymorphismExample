@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from projects.models import Project
+
+
+class ProjectList(ListView):
+    model = Project
+    template_name = 'projects/list.html'
+
