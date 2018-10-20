@@ -29,3 +29,8 @@ $ python manage.py shell
 >>> Project.objects.filter(topic='Art project number:29').get()
 <ArtProject: Art project number:29>
 ```
+
+
+## DRF
+
+1. Visit `http://127.0.0.1:8000/api/projects/`
